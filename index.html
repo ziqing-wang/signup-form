@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="form-container">
+      <div class="title">
+        <span>Try it free 7 days</span>
+        <span>then $20/mo. thereafter</span>
+      </div>
+      <div class="sign-form">
+        <form action="">
+          <div class="inputs first-name">
+            <input type="text" id="first-name" placeholder="First Name">
+            <i class="error-icon"></i>
+            <span class="error-text">First Name cannot be empty</span>
+          </div>
+
+          <div class="inputs last-name">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <i class="error-icon"></i>
+            <span class="error-text">Last Name cannot be empty</span>
+          </div>
+          <div class="inputs email">
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <i class="error-icon"></i>
+            <span class="error-text empty-email">Email Address cannot be empty</span>
+            <span class="error-text invalid-email">Looks like this is not an email</span>
+            
+          </div>
+          <div class="inputs pwd">
+            <input type="password" name="pwd" id="pwd" placeholder="Password">
+            <i class="error-icon"></i>
+            <span class="error-text">Password cannot be empty</span>
+          </div>
+
+          <button type="submit" required="true" id="sign-btn">CLAIM YOUR FREE TRIAL</button>
+        </form>
+        <p class="tip">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Ziqing Wang</a>.
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
